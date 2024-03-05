@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="icon_mmonky.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Monky Monkey Corporation</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, white, black);
+        }
+        .login-screen{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.9);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 15px;
+            color: white;
+            padding-bottom: 2%;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 5%;
+        }
+        input{
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            font-size: 15px;
+            outline-style: solid;
+            outline-color: rgb(216, 216, 216);
+        }
+        button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 83%;
+            border-radius: 20px;
+            color: white;
+            font-size: 15px;
+        }
+        button:hover{
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="login-screen">
+        <h1>Login</h1>
+        <input id="username" type="text" placeholder="ID Name">
+        <br>
+        <br>
+        <input id="password" type="password" placeholder="ID">
+        <br>
+        <br>
+        <button class="loginbutton" onclick="login()">Download</button>
+        <h6 id="id-explained">On Put Your ID You Download Archives Of ID You Put</h6>
+        <h4>Not Remember Your ID? <a href="error404.html">Here!</a>  </h4>
+        <br>
+        <h3><a href="error404.html"></a></h3> 
+        <h4><a href="gb.html">Games</a></h4>
+    </div>
+
+    <style>
+        #id-explained {
+            margin-right: 15%;
+        }
+    </style>
+
+
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'JOSEPH' && password === 'L1OP34') {
+                // Código para baixar o arquivo aqui
+                var link = document.createElement('a');
+                link.href = 'Joseph.rar';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            } else {
+                
+            }
+        }
+    </script>
+</body>
+</html>
